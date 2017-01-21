@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="home.css"/>
-<title>Darkhold Official</title>
+<meta name="viewport" contentwidth="device-width, initial-scale=1">
+<link rel="icon" style="image/png" href="symbol1.png">
+<link rel="stylesheet" type="text/css" href="home.css">
+<div class="tabtitle"><title>Darkhold Official</title></div>
 <style>
 body {margin:0;}
 ul.topnav {
@@ -54,15 +55,19 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
+
+.tabtitle {
+	font-family: "akashi";
+}
 </style>
 </head>
 <body>
 
 <ul class="topnav" id="myTopnav">
-  <li><a class="active" href="pages/index.html"><strong>Home</strong></a></li>
-  <li><a href="pages/news.html">News</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
   <li><a href="#picturesandvideos">Pictures and Videos</a></li>
-  <li><a href="pages/contacts.html">Contacts</a></li>
+  <li><a href="contacts.html">Contacts</a></li>
   <li class="icon">
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
   </li>
@@ -70,6 +75,47 @@ ul.topnav li.icon {display: none;}
 
 <div style="padding-left:16px">
   <h2>Darkhold</h2>
+  <style>
+.chip {
+	display: inline-block;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+	font-family: "akashi", Arial, Calibri;
+	color: #CF0000;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.chip {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.chip:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+
+<a href="contacts.html"><div class="chip">
+  <img src="symbol1.png" alt="Person" width="96" height="96">
+  <b>Darky</b>
+</div></a>
+
+</body>
   <p>Still don't really know what this website will turn into, example: official webpage or short film showcase site.</p>
 </div>
 
@@ -84,6 +130,15 @@ function myFunction() {
 }
 </script>
 
+<p>I did create this website by myself and I am sure that I'm might not be that good
+<br>however, by making/creating this website I have learned a few tips and tricked a long the way.
+<br>
+</p>
+
+<footer>DISCLAIMER:
+<br>It is recommended for the website to be used on a mobile device with better viewing capability.
+<br>Thank you for your cooperation. =)
+</footer>
 </body>
 
 </html>
