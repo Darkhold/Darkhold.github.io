@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" contentwidth="device-width, initial-scale=1">
+<link rel="icon" style="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="media.css">
+<title>Darkhold Official - Media</title>
+<style>
+body {margin:0;
+	  background-color: #C0C0C0;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color:#DF1020;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Akashi;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@font-face	{font-family: Raider Crusader Bevel;
+		 src: url('raidercrusaderbevel.ttf');
+}
+
+h2	{font-family: "Raider Crusader Bevel", Time, serif;
+	 font-size: 40px;
+	 font-weight: bold;
+	 color: #0f0f0f;
+	 text-align: center;
+	 text-decoration: underline
+
+}
+
+h3	{font-family: "Akashi"
+
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="media.html">Media</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div style="padding-left:16px">
+	<script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+
+<div id="clockbox" align="right"></div>
+  <h2>Darkhold</h2>
+  <h3>Media</h3>
+  <p>On this page you will find where and how to contact the owners of this site.<br>You can contact the owners through these sites or in the form down below,<br>or even by clicking on <a href="mailto:lightyeti13@gmail.com?Subject=Ask%20Darkhold">here</a></p>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+
+<style>
+@font-face	{font-family: Akashi;
+		 src: url('akashi.ttf');}
+
+.card {
+	font-family: "Akashi", Arial, Calibri;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+	background-color: #E0E0E0
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.tname {
+	font-size: 25px;
+}
+
+.shname {
+	font-size: 17px;
+}
+</style>
+<style>
+.hcolor {
+	background-color: #DF1020
+}
+
+.points {
+	background-color: #303030
+
+}
+
+.pointss {
+	background-color: #303030
+
+}
+
+.pointtext {
+	color: white;
+	font-family: "Akashi";
+}
+
+.wordtext {
+	color: white;
+	font-family: "Akashi";
+}
+
+</style>
+</head>
+<body>
+
+<h3></h3>
+<table width="100%";>
+<tr class="wordtext">
+	<td rowspan="400px"></td>
+	<td class="hcolor" align="center" ><b>About Me</b></td>
+	<td rowspan="400px"></td>
+	<td class="hcolor" align="center" ><b>Social Media</b></td>
+	<td rowspan="400px"></td>
+	<td class="hcolor" align="center" ><b>Discord Server</b></td>
+	<td rowspan="400px"></td>
+	<td class="hcolor" align="center" ><b>Computer Spec</b></td>
+	<td rowspan="400px"></td>
+</tr>
+<tr>
+	<td class="points">
+	<div class="pointtext">
+		<ul>
+			<li>I'm 17.</li>
+			<br>
+			<li>From Italy<br>and Thailand.</li>
+			<br>
+			<li>Speak English.</li>
+			<br>
+			<li>Will start a radio <br>kind of show on Twitch.</li>
+			<br>
+			<li>Is a gamer but not really <br>good.</li>
+			<br>
+		</ul>
+	</div>
+	</td>
+	<td class="points">
+	<div class="pointtext">
+		<ul>
+			<li>Follow me on <b>Twitch</b></li>
+			<br>
+			<li>Subscribe on YouTube</li>
+			<br>
+			<li>Join <b>Discord Server</b></li>
+			<br>
+		</ul>
+	</div>
+	</td>
+	<td class="points">
+	<div class="pointtext">
+		<ul align="top">
+			<li></li>
+			<br>
+			<li></li>
+			<br>
+		</ul>
+	</div>
+	</td>
+	<td class="points">
+	<div class="pointtext">
+		<ul align="top">
+			<li></li>
+			<br>
+			<li></li>
+			<br>
+		</ul>
+	</div>
+	</td>
+</tr>
+</table>
+
+
+</body>
+
+</html>
