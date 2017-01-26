@@ -1,15 +1,15 @@
-Body		{background-color: #C0C0C0}
+Body		{background-color: #C0C0C0;}
 
 @font-face	{font-family: Raider Crusader Bevel;
-		 src: url('raidercrusaderbevel.ttf');}
+		 src: url(raidercrusaderbevel.ttf);}
 
 h2		{font-family: "Raider Crusader Bevel", Times, serif;
 		 font-size: 40px;
 		 font-weight: bold;
 		 color: #0f0f0f;
 		 text-align: center;
-		 text-decoration: underline}
+		 text-decoration: underline;}
 
 p		{font-family: "Arial", sans-serif;
-		 font-size: 15px}
+		 font-size: 15px;}
 		 
