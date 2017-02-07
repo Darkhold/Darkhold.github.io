@@ -89,6 +89,28 @@ h3	{font-family: "Akashi"
 </ul>
 
 <div style="padding-left:16px">
+	<script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+
+<div id="clockbox" align="right"></div>
   <h2>Darkhold</h2>
   <h3>Contacts</h3>
   <p>On this page you will find where and how to contact the owners of this site.<br>You can contact the owners through these sites or in the form down below,<br>or even by clicking on <a href="mailto:lightyeti13@gmail.com?Subject=Ask%20Darkhold">here</a></p>
